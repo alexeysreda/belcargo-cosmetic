@@ -1,4 +1,89 @@
-@import url 'reset.css';
-@import url '__fonts.styl';
-@import url '__variables.styl';
+@import 'reset.css';
+@import '__fonts.styl';
+@import '__variables.styl';
 
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $main-color;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    //margin-top: 18px;
+}
+
+
+.header__content_wrapper {
+    background: linear-gradient(to right bottom, transparent 0%, transparent 70%, red 70%, red 75%, blue 75%, blue 100%),
+                url('../img/header-background.png') no-repeat center center;
+
+    background-size: cover cover;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90%;
+    margin-top: 180px;
+    margin-bottom: 250px;
+    position: relative;
+
+    //&::after {
+    //    content: url('../img/header-truck.png');
+    //    position: absolute;
+    //    overflow: hidden;
+    //    border-left: 5px solid red;
+    //    background: $blue-gradient;
+    //    width: 300vmax;
+    //    height: 300vmax;
+    //    right: 20px;
+    //    bottom: 0;
+    //    transform: skewX(-30deg);
+    //    //z-index: 5;
+    //
+    //}
+
+}
+
+.header__h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 40px;
+
+}
+
+.header__h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
