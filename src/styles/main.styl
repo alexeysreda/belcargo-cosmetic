@@ -143,7 +143,7 @@ html, body {
     width: 360px;
     height: 70px;
     border-radius: 4px;
-    box-shadow: 0 10px 25px -5px #BB0833;
+    box-shadow: 0 10px 25px -10px #BB0833;
 
     &:hover, &:focus {
         cursor: pointer;
@@ -180,3 +180,94 @@ html, body {
     }
 }
 
+.section__heading {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 52px;
+    color: #03244E;
+    z-index: 2;
+    & .lines {
+        left: -21px;
+        top: 27px;
+    }
+
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages .section__heading {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 60px;
+}
+
+.advantages__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.advantages__list {
+    padding: 70px 50px 70px 70px;
+    background-color: #fff;
+    border: 10px solid transparent;
+    border-image-source: $blue-gradient;
+    border-image-slice: 1;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 22px -10px #0D65D2;
+    //margin-left: 20px;
+}
+
+.advantages__list_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: flex-start;
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+}
+.advantages__image_wrapper {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.advantage__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #03244E;
+    margin-top: 10px;
+
+    &_bold {
+        font-weight: 700;
+    }
+}
