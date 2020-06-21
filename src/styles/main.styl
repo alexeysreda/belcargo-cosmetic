@@ -1,8 +1,6 @@
 @import 'reset.css';
 @import '__fonts.styl';
 @import '__variables.styl';
-
-
 * {
     box-sizing: border-box;
 }
@@ -24,9 +22,12 @@ html, body {
 }
 
 .header {
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     flex-direction: column;
+    //background: linear-gradient(110deg, transparent 0%, transparent 74%, red 74%, red 75%, blue 75%, blue 100%)
+    background: url('../img/header-bg.png') no-repeat center center;
+    background-size: cover;
 }
 
 .header__ul {
@@ -38,14 +39,54 @@ html, body {
     //margin-top: 18px;
 }
 
-
-.header__content_wrapper {
-    background: linear-gradient(to right bottom, transparent 0%, transparent 70%, red 70%, red 75%, blue 75%, blue 100%),
-                url('../img/header-background.png') no-repeat center center;
-
-    background-size: cover cover;
+.header__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
 }
 
+.header__link_mail {
+    font-size: 18px;
+    color: #03244E;
+    font-weight: 400;
+    &:hover, &:focus {
+        
+    }
+}
+
+.header__link_phone {
+    font-weight: 700;
+    font-size: 24px;
+    color: #03244E;
+}
+
+.header__link_wrapper {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: $blue-gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.header__menu {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+}
+
+//.header__content_wrapper {
+//    background: url('../img/header-background.png') no-repeat center center;
+//
+//    background-size: cover;
+//    z-index: -1;
+//}
 .header__content {
     display: flex;
     flex-direction: column;
@@ -55,7 +96,6 @@ html, body {
     margin-top: 180px;
     margin-bottom: 250px;
     position: relative;
-
     //&::after {
     //    content: url('../img/header-truck.png');
     //    position: absolute;
@@ -70,7 +110,6 @@ html, body {
     //    //z-index: 5;
     //
     //}
-
 }
 
 .header__h1 {
@@ -78,7 +117,10 @@ html, body {
     font-size: 48px;
     line-height: 65px;
     margin-bottom: 40px;
-
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .header__h2 {
@@ -87,3 +129,54 @@ html, body {
     line-height: 30px;
     margin-bottom: 40px;
 }
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    background: $red-gradient;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: 360px;
+    height: 70px;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px -5px #BB0833;
+
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+}
+
+.lines {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: $red-gradient;
+    left: -20px;
+    top: 30px;
+    z-index: -1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: $red-gradient;
+        width: 16px;
+        height: 2px;
+        top: -5px;
+        left: 14px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: $red-gradient;
+        width: 22px;
+        height: 2px;
+        top: 5px;
+        left: 5px;
+    }
+}
+
