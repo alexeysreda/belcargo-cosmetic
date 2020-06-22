@@ -519,3 +519,47 @@ body {
   margin-top: 20px;
   width: 75%;
 }
+.about-us {
+  background: url("../img/about-us-bg.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.about-us .section__heading {
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fbfdff;
+  margin-bottom: 60px;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 45px;
+  padding-left: 60px;
+  position: relative;
+}
+.about__item::before {
+  content: url("../img/icons/about-check.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about__heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fbfdff;
+  margin-bottom: 10px;
+}
+.about__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfdff;
+}
+.about-us .link {
+  margin-top: 70px;
+}
