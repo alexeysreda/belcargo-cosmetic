@@ -219,6 +219,11 @@ html, body {
     width: 100%;
 }
 
+.advantages__image_truck {
+    position: relative;
+    left: -25px;
+}
+
 .advantages__list {
     padding: 70px 50px 70px 70px;
     background-color: #fff;
@@ -277,7 +282,7 @@ html, body {
     background: url('../img/help-bg.png') no-repeat center center;
     background-size: cover;
     padding-top: 140px;
-    padding-bottom: -160px;
+    //padding-bottom: -160px;
     //margin-bottom: -160px;
     //padding-bottom: -160px;
 }
@@ -293,8 +298,15 @@ html, body {
     margin-bottom: 80px;
     & .lines {
         left: -24px;
+
     }
+
 }
+
+
+
+
+
 
 
 .help__list {
@@ -307,7 +319,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 140px;
+    //margin-bottom: 140px;
     background: url('../img/help-cosmetic-left.png') no-repeat left center,
                 url('../img/help-cosmetic-right.png') no-repeat right center,
                 #fff;
@@ -356,6 +368,10 @@ html, body {
     padding-top: 65px;
     padding-left: 100px;
     padding-bottom: 80px;
+    box-shadow: 0 10px 25px -10px #BB0833;
+    position: relative;
+    top: 160px;
+    margin-top: -20px;
 }
 
 .price__heading {
@@ -367,8 +383,12 @@ html, body {
     top: 0;
     left: 0;
     margin-bottom: 60px;
+    z-index: 1;
     //z-index: 4;
     & .lines {
+        z-index: -1;
+        left: -22px;
+        top: 25px;
         //z-index: 1;
         //overflow: hidden;
     }
@@ -386,6 +406,7 @@ html, body {
     outline: none;
     padding: 25px 35px;
     margin-bottom: 20px;
+    border-radius: 4px;
 
 }
 
@@ -396,3 +417,24 @@ html, body {
     height: 70px;
 }
 
+.steps {
+    margin-top: 300px;
+}
+
+.steps .section__heading {
+    margin-bottom: 90px;
+    z-index: 1;
+}
+
+.steps__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    //flex-basis: 33%;
+    flex-wrap: wrap;
+}
+
+ .step {
+     width: 30%;
+ }

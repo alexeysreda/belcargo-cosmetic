@@ -49,6 +49,7 @@ input[type="radio"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 28px;
+  padding-top: 2px;
   line-height: 20px;
   cursor: pointer;
 }
@@ -62,7 +63,7 @@ input[type="radio"]:not(:checked) + label:before {
   top: 0;
   width: 18px;
   height: 18px;
-  border: 1px solid #ddd;
+  border: 1px solid #de1142;
   background-color: #fff;
 }
 input[type="checkbox"]:checked + label:before,
@@ -88,12 +89,12 @@ input[type="radio"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
   left: 3px;
-  top: 7px;
+  top: 6px;
   width: 12px;
   height: 8px;
   border-radius: 1px;
-  border-left: 4px solid #3d87ec;
-  border-bottom: 4px solid #3d87ec;
+  border-left: 2px solid #de1142;
+  border-bottom: 2px solid #de1142;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -107,7 +108,7 @@ input[type="radio"]:not(:checked) + label:after {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #3d87ec;
+  background-color: #de1142;
 }
 input[type="checkbox"]:not(:checked) + label:after,
 input[type="radio"]:not(:checked) + label:after {
@@ -289,6 +290,10 @@ body {
   align-items: flex-end;
   width: 100%;
 }
+.advantages__image_truck {
+  position: relative;
+  left: -25px;
+}
 .advantages__list {
   padding: 70px 50px 70px 70px;
   background-color: #fff;
@@ -340,7 +345,6 @@ body {
   background: url("../img/help-bg.png") no-repeat center center;
   background-size: cover;
   padding-top: 140px;
-  padding-bottom: -160px;
 }
 .help .section__heading {
   font-weight: 700;
@@ -365,7 +369,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 140px;
   background: url("../img/help-cosmetic-left.png") no-repeat left center, url("../img/help-cosmetic-right.png") no-repeat right center, #fff;
 }
 .help__item {
@@ -406,6 +409,10 @@ body {
   padding-top: 65px;
   padding-left: 100px;
   padding-bottom: 80px;
+  box-shadow: 0 10px 25px -10px #bb0833;
+  position: relative;
+  top: 160px;
+  margin-top: -20px;
 }
 .price__heading {
   font-weight: 700;
@@ -416,6 +423,12 @@ body {
   top: 0;
   left: 0;
   margin-bottom: 60px;
+  z-index: 1;
+}
+.price__heading .lines {
+  z-index: -1;
+  left: -22px;
+  top: 25px;
 }
 .price__heading_blue {
   font-weight: 800;
@@ -428,10 +441,28 @@ body {
   outline: none;
   padding: 25px 35px;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 .price .link {
   margin-top: 30px;
   margin-bottom: 20px;
   width: 317px;
   height: 70px;
+}
+.steps {
+  margin-top: 300px;
+}
+.steps .section__heading {
+  margin-bottom: 90px;
+  z-index: 1;
+}
+.steps__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.step {
+  width: 30%;
 }

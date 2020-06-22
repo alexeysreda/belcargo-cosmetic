@@ -13,6 +13,7 @@
         display: inline-block;
         position: relative;
         padding-left: 28px;
+        padding-top: 2px;
         line-height: 20px;
         cursor: pointer;
     }
@@ -27,7 +28,7 @@
         top: 0;
         width: 18px;
         height: 18px;
-        border: 1px solid #dddddd;
+        border: 1px solid $red-color;
         background-color: #ffffff;
     }
 
@@ -59,12 +60,12 @@
     input[type="checkbox"]:checked + label:after,
     input[type="checkbox"]:not(:checked) + label:after {
         left: 3px;
-        top: 7px;
+        top: 6px;
         width: 12px;
         height: 8px;
         border-radius: 1px;
-        border-left: 4px solid #3D87EC;
-        border-bottom: 4px solid #3D87EC;
+        border-left: 2px solid $red-color;
+        border-bottom: 2px solid $red-color;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
@@ -74,16 +75,12 @@
 
     input[type="radio"]:checked + label:after,
     input[type="radio"]:not(:checked) + label:after {
-        //position: absolute;
-
         left: 4px;
-
         top: 4px;
-
         width: 10px;
         height: 10px;
         border-radius: 100%;
-        background-color: #3D87EC;
+        background-color: $red-color;
 
     }
 
