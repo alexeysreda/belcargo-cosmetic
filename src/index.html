@@ -391,29 +391,35 @@
 
 <footer class="footer">
 
-    <img src="img/icons/belcargo-logo-header.svg" alt="">
+    <div class="container">
+        <img class="footer__logo" src="img/icons/belcargo-logo-header.svg" alt="">
 
-    <h3 class="section__heading"><span class="lines"></span>Позвоните нам</h3>
+        <h3 class="section__heading"><span class="lines"></span>Позвоните нам</h3>
 
-    <a href="#" class="footer__phone">
-        <div class="footer__icon"><img src="img/icons/header-phone.svg" alt=""></div>
-        <p>+7 (495) 291-00-47</p>
-    </a>
+        <a href="#" class="footer__phone">
+            <div class="footer__icon"><img src="img/icons/header-phone.svg" alt=""></div>
+            <p>+7 (495) 291-00-47</p>
+        </a>
 
-    <p>или</p>
+        <p class="footer__divider">или</p>
 
-    <h3 class="section__heading"><span class="lines"></span>Оставьте заявку</h3>
+        <h3 class="section__heading"><span class="lines"></span>Оставьте заявку</h3>
 
-    <form action="price.php" class="footer__form" method="post">
-        <input type="text" placeholder="Введите Ваше имя">
-        <input type="tel" placeholder="Введите Ваш телефон">
-        <button class="link" type="submit">Отправить</button>
-        <input type="checkbox" id="footerCheckbox" checked><label for="footerCheckbox">Согласен с <a href="policy.html">обработкой персональных данных</a></label>
-    </form>
+        <form action="price.php" class="footer__form" method="post">
+            <div class="footer__form_row">
+                <input class="footer__input" type="text" placeholder="Введите Ваше имя">
+                <input class="footer__input" type="tel" placeholder="Введите Ваш телефон">
+                <button class="link" type="submit">Отправить</button>
+            </div>
+            <div class="footer__checkbox"><input type="checkbox" id="footerCheckbox" checked><label class="footer__label" for="footerCheckbox">Согласен с <a
+                    href="policy.html">обработкой персональных данных</a></label></div>
 
-    <div class="footer__info">
-        <a href="policy.html" class="footer__policy">Политика конфиденциальности</a>
-        <p class="footer__copyright"></p>
+        </form>
+
+        <div class="footer__info">
+            <a href="policy.html" class="footer__policy">Политика конфиденциальности</a>
+            <p class="footer__copyright">&copy; 2020. BELCARGO</p>
+        </div>
     </div>
 </footer>
 

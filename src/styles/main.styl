@@ -748,6 +748,105 @@ html, body {
 }
 
 .footer {
-	height: 300px;
-	background-color: darkblue;
+	//height: 300px;
+	background-color: #03244E;
+	color: #FBFDFF;
+	padding-top: 60px;
+	padding-bottom: 30px;
+
+	& .section__heading {
+		color: #FBFDFF;
+		position: relative;
+	}
+}
+
+.footer__logo {
+	margin-bottom: 55px;
+}
+
+.footer__divider {
+	//margin-top: 40px;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 28px;
+	color: #7C8D9C;
+}
+
+.footer__phone {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: 700;
+	font-size: 24px;
+	color: #FBFDFF;
+	text-decoration: none;
+
+}
+
+.footer__icon {
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	background: $red-gradient;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.footer__form_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.footer__input {
+	padding: 25px 35px;
+	margin-right: 30px;
+	border: 1px solid $blue-color;
+	border-radius: 4px;
+	outline: none;
+	height: 70px;
+	width: 317px;
+}
+
+.footer__checkbox {
+	margin-left: 694px;
+	margin-bottom: 20px;
+}
+
+.footer__label {
+	font-weight: 300;
+	font-size: 14px;
+	color: #FBFDFF;
+	& a {
+		font-weight: 300;
+		font-size: 14px;
+		color: #FBFDFF;
+		text-decoration: underline;
+	}
+}
+
+.footer__info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	font-weight: 400;
+	font-size: 14px;
+	color: #BDBDBD;
+
+	& a {
+		font-weight: 400;
+		font-size: 14px;
+		color: #BDBDBD;
+	}
 }
