@@ -126,6 +126,7 @@ input[type="radio"]:checked + label:after {
 }
 * {
   box-sizing: border-box;
+  transition: all 0.4s ease;
 }
 html,
 body {
@@ -160,6 +161,15 @@ body {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+}
+.header__link:hover,
+.header__link:focus {
+  color: #de1142;
+}
+.header__link:hover .header__link_wrapper,
+.header__link:focus .header__link_wrapper {
+  background: linear-gradient(to right, #de1142 0%, #bb0833 100%);
+  transition: background 0.4s ease;
 }
 .header__link_mail {
   font-size: 18px;
@@ -234,6 +244,11 @@ body {
 .link:hover,
 .link:focus {
   cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px 0 #bb0833;
+}
+.link:active {
+  background: linear-gradient(90deg, rgba(222,17,66,0.5) 0%, rgba(187,8,51,0.5) 100%);
 }
 .lines {
   position: absolute;
@@ -707,6 +722,15 @@ body {
   align-items: center;
   text-decoration: none;
 }
+.contacts__link:not(.contacts__link_text):hover .contacts__text,
+.contacts__link:not(.contacts__link_text):focus .contacts__text {
+  color: #de1142;
+}
+.contacts__link:not(.contacts__link_text):hover .contacts__icon,
+.contacts__link:not(.contacts__link_text):focus .contacts__icon {
+  background: linear-gradient(to right, #de1142 0%, #bb0833 100%);
+  transition: background 0.4s ease;
+}
 .contacts__icon {
   display: flex;
   justify-content: center;
@@ -754,6 +778,15 @@ body {
   font-size: 24px;
   color: #fbfdff;
   text-decoration: none;
+  width: 25%;
+}
+.footer__phone p {
+  display: flex;
+}
+.footer__phone:hover p,
+.footer__phone:focus p {
+  color: #de1142;
+  transition: all 0.4s ease;
 }
 .footer__icon {
   width: 47px;
@@ -811,4 +844,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #bdbdbd;
+}
+.policy__link:hover,
+.policy__link:focus {
+  color: #fff;
 }

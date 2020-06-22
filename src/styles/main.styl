@@ -4,6 +4,7 @@
 @import '__helpers.styl';
 * {
 	box-sizing: border-box;
+	transition: all 0.4s ease;
 }
 
 html, body {
@@ -45,14 +46,24 @@ html, body {
 	flex-direction: row;
 	align-items: center;
 	text-decoration: none;
+
+	&:hover, &:focus {
+		color: $red-color;
+
+		& .header__link_wrapper {
+			background: $red-gradient;
+			transition: background 0.4s ease;
+
+
+		}
+	}
 }
 
 .header__link_mail {
 	font-size: 18px;
 	color: #03244E;
 	font-weight: 400;
-	&:hover, &:focus {
-	}
+
 }
 
 .header__link_phone {
@@ -146,6 +157,12 @@ html, body {
 	box-shadow: 0 10px 25px -10px #BB0833;
 	&:hover, &:focus {
 		cursor: pointer;
+		transform: translateY(-5px);
+		box-shadow: 0 10px 25px 0 #BB0833;
+
+	}
+	&:active {
+		background: linear-gradient(90deg, rgba(222, 17, 66, 0.5) 0%, rgba(187, 8, 51, 0.5) 100%);
 	}
 }
 
@@ -740,6 +757,22 @@ html, body {
 	justify-content: flex-start;
 	align-items: center;
 	text-decoration: none;
+	&:not(.contacts__link_text) {
+		&:hover, &:focus {
+			.contacts__text {
+				color: $red-color;
+			}
+
+
+			& .contacts__icon {
+				background: $red-gradient;
+				transition: background 0.4s ease;
+
+
+			}
+		}
+	}
+
 }
 
 .contacts__icon {
@@ -798,6 +831,17 @@ html, body {
 	font-size: 24px;
 	color: #FBFDFF;
 	text-decoration: none;
+	width: 25%;
+
+	& p {
+		display: flex;
+	}
+
+
+	&:hover p, &:focus p {
+		color: $red-color;
+		transition: all 0.4s ease;
+	}
 
 }
 
@@ -862,5 +906,11 @@ html, body {
 		font-weight: 400;
 		font-size: 14px;
 		color: #BDBDBD;
+	}
+}
+
+.policy__link {
+	&:hover, &:focus {
+		color: #fff;
 	}
 }
