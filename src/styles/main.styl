@@ -223,15 +223,15 @@ html, body {
 .advantages__list {
 	padding: 70px 50px 70px 70px;
 	background-color: #fff;
-	border: 10px solid transparent;
-	border-image-source: $blue-gradient;
-	border-image-slice: 1;
 	height: 600px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	border: 10px solid transparent;
+	border-image-source: $blue-gradient;
+	border-image-slice: 1;
 	box-shadow: 0 15px 22px -10px #0D65D2;
 	//margin-left: 20px;
 }
@@ -546,4 +546,208 @@ html, body {
 
 .about-us .link {
 	margin-top: 70px;
+}
+
+.numbers {
+	padding-top: 140px;
+	padding-bottom: 110px;
+}
+
+.numbers .section__heading {
+	position: relative;
+	margin-bottom: 90px;
+
+	& .lines {
+		left: -23px;
+	}
+}
+
+.numbers__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.numbers__item {
+	position: relative;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	//height: 100px;
+	height: 280px;
+	z-index: 1;
+
+	& img {
+		position: absolute;
+		top: 40px;
+
+		right: 0;
+		z-index: 0;
+	}
+}
+
+.numbers__number {
+	font-weight: 800;
+	font-size: 150px;
+	line-height: 1;
+	color: $blue-color;
+	z-index: 1;
+	//position: absolute;
+	//right: 60px;
+	//bottom: 170px;
+
+
+}
+
+.numbers__item:first-child .numbers__number {
+	align-self: flex-end;
+	margin-right: -35px;
+}
+
+.numbers__item:first-child .numbers__text {
+	//padding-left: 50px;
+}
+
+.numbers__text {
+	margin-top: 40px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #03244E;
+	//width: 70%;
+	//width: 70%;
+	//padding-right: 100px;
+	//align-self: flex-start;
+}
+//.numbers__item img {
+//	position: absolute;
+//	top: 0;
+//	right: 0;
+//}
+
+
+//.numbers__item:nth-child(1) {
+//	background: url('../img/numbers-bg-1.png') no-repeat top right;
+//
+//}
+
+
+.belarus {
+	border: 10px solid transparent;
+	border-image-source: $blue-gradient;
+	border-image-slice: 1;
+	box-shadow: 0 15px 22px -10px #0D65D2;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 70px 80px 80px 80px;
+	position: relative;
+	margin-bottom: 110px;
+	& .section__heading {
+		position: relative;
+		display: flex;
+		width: 55%;
+		//z-index: 1;
+	}
+
+	&::after {
+		content: url('../img/belarus-map.png');
+		position: absolute;
+		bottom: -55px;
+		right: 100px;
+	}
+
+
+}
+
+.belarus__list {
+	margin-left: 15px;
+	//padding-left: 50px;
+}
+
+.belarus__item {
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #03244E;
+	padding-left: 40px;
+	&::before {
+		content: url('../img/icons/belarus-plus.svg');
+		position: absolute;
+		top: -5px;
+
+		left: 0;
+	}
+
+	&:first-child {
+		margin-bottom: 40px;
+	}
+
+
+}
+
+.contacts {
+	margin-bottom: -200px;
+	//padding-bottom: 100px;
+
+	& .section__heading {
+		position: relative;
+		margin-bottom: 70px;
+	}
+}
+
+.contacts__wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.contacts__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&:first-child {
+		margin-right: 200px;
+	}
+}
+
+.contacts__link {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+}
+
+.contacts__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $blue-gradient;
+	width: 47px;
+	height: 47px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.contacts__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #03244E;
+
+}
+
+.footer {
+	height: 300px;
+	background-color: darkblue;
 }

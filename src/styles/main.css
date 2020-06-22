@@ -297,15 +297,15 @@ body {
 .advantages__list {
   padding: 70px 50px 70px 70px;
   background-color: #fff;
-  border: 10px solid transparent;
-  border-image-source: linear-gradient(to right, #0d65d2 0%, #1c78eb 100%);
-  border-image-slice: 1;
   height: 600px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: 10px solid transparent;
+  border-image-source: linear-gradient(to right, #0d65d2 0%, #1c78eb 100%);
+  border-image-slice: 1;
   box-shadow: 0 15px 22px -10px #0d65d2;
 }
 .advantages__list_column {
@@ -562,4 +562,149 @@ body {
 }
 .about-us .link {
   margin-top: 70px;
+}
+.numbers {
+  padding-top: 140px;
+  padding-bottom: 110px;
+}
+.numbers .section__heading {
+  position: relative;
+  margin-bottom: 90px;
+}
+.numbers .section__heading .lines {
+  left: -23px;
+}
+.numbers__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.numbers__item {
+  position: relative;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 280px;
+  z-index: 1;
+}
+.numbers__item img {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 0;
+}
+.numbers__number {
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 1;
+  color: #1872e3;
+  z-index: 1;
+}
+.numbers__item:first-child .numbers__number {
+  align-self: flex-end;
+  margin-right: -35px;
+}
+.numbers__text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #03244e;
+}
+.belarus {
+  border: 10px solid transparent;
+  border-image-source: linear-gradient(to right, #0d65d2 0%, #1c78eb 100%);
+  border-image-slice: 1;
+  box-shadow: 0 15px 22px -10px #0d65d2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px 80px 80px 80px;
+  position: relative;
+  margin-bottom: 110px;
+}
+.belarus .section__heading {
+  position: relative;
+  display: flex;
+  width: 55%;
+}
+.belarus::after {
+  content: url("../img/belarus-map.png");
+  position: absolute;
+  bottom: -55px;
+  right: 100px;
+}
+.belarus__list {
+  margin-left: 15px;
+}
+.belarus__item {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #03244e;
+  padding-left: 40px;
+}
+.belarus__item::before {
+  content: url("../img/icons/belarus-plus.svg");
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+.belarus__item:first-child {
+  margin-bottom: 40px;
+}
+.contacts {
+  margin-bottom: -200px;
+}
+.contacts .section__heading {
+  position: relative;
+  margin-bottom: 70px;
+}
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.contacts__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contacts__column:first-child {
+  margin-right: 200px;
+}
+.contacts__link {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.contacts__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0d65d2 0%, #1c78eb 100%);
+  width: 47px;
+  height: 47px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #03244e;
+}
+.footer {
+  height: 300px;
+  background-color: #00008b;
 }
