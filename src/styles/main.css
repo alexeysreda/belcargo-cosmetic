@@ -35,6 +35,50 @@
   font-weight: 800;
   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url("fonts/open-sans-v17-latin_cyrillic-800.woff2") format('woff2'), url("fonts/open-sans-v17-latin_cyrillic-800.woff") format('woff'),;
 }
+.fancybox-content {
+  padding: 0 !important;
+  border-radius: 4px !important;
+}
+.fancybox-button svg {
+  top: 20px;
+  right: 20px;
+}
+.modal__content {
+  border: 10px solid transparent;
+  border-image-source: linear-gradient(to right, #de1142 0%, #bb0833 100%);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  border-radius: 4px;
+}
+.modal__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #03244e;
+  margin-bottom: 55px;
+}
+.modal__input,
+.modal__textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 70px;
+  outline: none;
+  border: 2px solid #1872e3;
+  border-radius: 4px;
+  padding: 25px 35px;
+}
+.modal__textarea {
+  height: 160px;
+}
+.modal .link {
+  width: 100%;
+  margin-bottom: 15px;
+}
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked),
 input[type="radio"]:checked,
@@ -123,51 +167,6 @@ input[type="radio"]:checked + label:after {
 .footer input[type="radio"]:checked + label:before,
 .footer input[type="radio"]:not(:checked) + label:before {
   background-color: #03244e;
-}
-.fancybox-content {
-  padding: 0 !important;
-  border-radius: 4px !important;
-  cursor: default !important;
-}
-.fancybox-button svg {
-  top: 20px;
-  right: 20px;
-}
-.modal__content {
-  border: 10px solid transparent;
-  border-image-source: linear-gradient(to right, #de1142 0%, #bb0833 100%);
-  border-image-slice: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 60px;
-  border-radius: 4px;
-}
-.modal__heading {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  text-align: center;
-  color: #03244e;
-  margin-bottom: 55px;
-}
-.modal__input,
-.modal__textarea {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 70px;
-  outline: none;
-  border: 2px solid #1872e3;
-  border-radius: 4px;
-  padding: 25px 35px;
-}
-.modal__textarea {
-  height: 160px;
-}
-.modal .link {
-  width: 100%;
-  margin-bottom: 15px;
 }
 * {
   box-sizing: border-box;
