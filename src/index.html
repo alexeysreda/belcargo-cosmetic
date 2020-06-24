@@ -8,10 +8,15 @@
     <title>БелКарго - доставка косметики из Европы</title>
 
     <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+
 </head>
 <body>
 
 <header class="header">
+    <!--    todo чекбоксы почему-то прокручивают страницу, разобраться-->
 
     <nav class="header__nav container">
         <ul class="header__ul">
@@ -51,7 +56,7 @@
         <section class="header__content container">
             <h1 class="header__h1"><span class="lines"></span>Доставка косметики<br>из Европы в Россию</h1>
             <h2 class="header__h2">Перевозка с нами - залог вашего спокойствия!</h2>
-            <button class="link">Рассчитать стоимость перевозки</button>
+            <button class="link" data-fancybox-trigger="modal-calculation">Рассчитать стоимость перевозки</button>
         </section>
 
 
@@ -139,6 +144,27 @@
         </div>
     </section>
 
+    <section class="modals">
+        <form class="modal modal__calculation" action="" data-fancybox="modal-calculation"
+              tabindex="-1">
+            <div class="modal__content">
+                <h3 class="modal__heading">Рассчитайте точную<br>стоимость доставки груза</h3>
+                <input class="modal__input" type="number" placeholder="Вес груза, кг" required>
+                <input class="modal__input" type="number" placeholder="Объём груза, куб.метров" required>
+                <input class="modal__input" type="text" placeholder="Место вывоза" required>
+                <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
+                <textarea class="modal__textarea" name="" id="" cols="10" rows="20">Комментарий</textarea>
+                <button class="link" type="submit">Отправить</button>
+                <div>
+                    <input type="checkbox" id="alala" required checked>
+                    <label for="alala">Согласен с <a href="policy.html" target="_blank">обработкой персональных данных</a></label>
+
+<!--                    todo у всех ссылок на policy.html добавить target="_blank"-->
+                </div>
+            </div>
+        </form>
+    </section>
+
     <section class="help">
         <div class="container">
             <h2 class="section__heading"><span class="lines"></span>Мы оказываем профессиональную помощь<br>в доставке и
@@ -174,12 +200,14 @@
             </ul>
 
             <form action="price.php" class="price" method="post">
-                <h3 class="price__heading"><span class="lines"></span>Получите полный<br>прайс-лист за <span class="price__heading_blue">1 минуту!</span></h3>
+                <h3 class="price__heading"><span class="lines"></span>Получите полный<br>прайс-лист за <span
+                        class="price__heading_blue">1 минуту!</span></h3>
                 <input class="price__input" type="text" placeholder="Введите Ваше имя">
                 <input class="price__input" type="email" placeholder="Введите Ваш email">
                 <button type="submit" class="link">Отправить</button>
-                <input type="checkbox" id="priceCheckbox" checked><label for="priceCheckbox" class="price__label">Согласен с <a
-                    href="policy.html">обработкой персональных данных</a></label>
+                <input type="checkbox" id="priceCheckbox" checked><label for="priceCheckbox" class="price__label">Согласен
+                с <a
+                        href="policy.html">обработкой персональных данных</a></label>
             </form>
         </div>
     </section>
@@ -291,7 +319,8 @@
 
     <section class="belarus container">
 
-        <h2 class="section__heading"><span class="lines"></span>У нас прозрачная схема поставок с таможенным оформлением в Беларуси</h2>
+        <h2 class="section__heading"><span class="lines"></span>У нас прозрачная схема поставок с таможенным оформлением
+            в Беларуси</h2>
 
         <ul class="belarus__list">
             <li class="belarus__item">Всё официально</li>
@@ -410,8 +439,10 @@
                 <input class="footer__input" type="tel" placeholder="Введите Ваш телефон">
                 <button class="link" type="submit">Отправить</button>
             </div>
-            <div class="footer__checkbox"><input type="checkbox" id="footerCheckbox" checked><label class="footer__label" for="footerCheckbox">Согласен с <a class="policy__link"
-                    href="policy.html">обработкой персональных данных</a></label></div>
+            <div class="footer__checkbox"><input type="checkbox" id="footerCheckbox" checked><label
+                    class="footer__label" for="footerCheckbox">Согласен с <a class="policy__link"
+                                                                             href="policy.html">обработкой персональных
+                данных</a></label></div>
 
         </form>
 
@@ -422,6 +453,20 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+<script>
+
+    $('[data-fancybox="modal-calculation"]').fancybox({
+        type: 'inline',
+        autoFocus: false,
+        hideScrollbar: false,
+        touch: false
+    });
+
+
+
+</script>
 </body>
 </html>
