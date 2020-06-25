@@ -946,6 +946,25 @@ body {
   .container {
     max-width: 992px;
   }
+  .advantages__list {
+    padding: 30px;
+    flex-direction: column;
+    height: auto;
+  }
+  .advantages__list_column {
+    width: 100%;
+  }
+  .advantages__list_column:first-child {
+    margin-bottom: 40px;
+  }
+  .advantages__list_column figure {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .advantages__image_wrapper {
+    margin-right: 40px;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .container {
@@ -958,6 +977,9 @@ body {
   .header__h2 {
     display: inline-block;
     width: 50%;
+  }
+  .advantages__image_truck {
+    display: none;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -1022,10 +1044,23 @@ body {
     padding-right: 10px;
     position: fixed;
     top: 0;
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 0 40px -4px #808080;
     z-index: 30;
   }
   .header__li_logo img {
     width: 140px;
+  }
+  .header__h1 .lines {
+    top: 24px;
+  }
+  .advantages__list {
+    padding: 30px 10px;
+  }
+  .advantages__list figcaption {
+    width: 80%;
+  }
+  .advantages__image_wrapper {
+    margin-right: 15px;
   }
 }

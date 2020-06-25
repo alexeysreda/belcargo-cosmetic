@@ -5,7 +5,35 @@
 	.container {
 		max-width: 992px;
 	}
+	.advantages__list {
+		padding: 30px;
+		flex-direction: column;
+		height: auto;
+
+
+	}
+
+	.advantages__list_column {
+		width: 100%;
+		&:first-child {
+			margin-bottom: 40px;
+		}
+		& figure {
+			width: 100%;
+			flex-direction: row;
+			//justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	.advantages__image_wrapper {
+		margin-right: 40px;
+	}
+
 }
+
+// todo .lines проверить везде на всех разрешениях
+
 
 @media screen and (max-width: 991.98px) {
 	.container {
@@ -18,6 +46,10 @@
 	.header__h2 {
 		display: inline-block;
 		width: 50%;
+	}
+
+	.advantages__image_truck {
+		display: none;
 	}
 }
 
@@ -99,12 +131,30 @@
 		padding-right: 10px;
 		position: fixed;
 		top: 0;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.95);
+		box-shadow: 0 0 40px -4px gray;
 		z-index: 30;
 	}
 
 	.header__li_logo img {
 		width: 140px;
+	}
+
+	.header__h1 {
+		& .lines {
+			top: 24px;
+		}
+	}
+
+	.advantages__list {
+		padding: 30px 10px;
+		& figcaption {
+			width: 80%;
+		}
+	}
+
+	.advantages__image_wrapper {
+		margin-right: 15px;
 	}
 
 
