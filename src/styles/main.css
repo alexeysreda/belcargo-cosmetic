@@ -57,7 +57,7 @@
 .modal__heading {
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 33px;
+  line-height: 2.0625rem;
   text-align: center;
   color: #03244e;
   margin-bottom: 55px;
@@ -82,7 +82,7 @@
 .modal__text {
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 25px;
+  line-height: 1.5625rem;
   color: #03244e;
   position: relative;
   padding-left: 45px;
@@ -114,8 +114,8 @@
 .mobile ul li {
   margin-bottom: 27px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
   color: #03244e;
 }
 .mobile ul li:first-child {
@@ -312,7 +312,7 @@ body {
 .header__h2 {
   font-weight: 400;
   font-size: 1.375rem;
-  line-height: 30px;
+  line-height: 1.875rem;
   margin-bottom: 40px;
 }
 .link {
@@ -370,7 +370,7 @@ body {
 .section__heading {
   font-weight: 700;
   font-size: 2.375rem;
-  line-height: 52px;
+  line-height: 3.25rem;
   color: #03244e;
   z-index: 2;
 }
@@ -444,7 +444,7 @@ body {
 .advantage__text {
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 27px;
+  line-height: 1.6875rem;
   color: #03244e;
   margin-top: 10px;
 }
@@ -459,7 +459,7 @@ body {
 .help .section__heading {
   font-weight: 700;
   font-size: 2.375rem;
-  line-height: 52px;
+  line-height: 3.25rem;
   color: #fbfdff;
   position: relative;
   top: 0;
@@ -498,13 +498,13 @@ body {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 27px;
+  line-height: 1.6875rem;
   color: #03244e;
 }
 .help__description {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #03244e;
 }
 .price {
@@ -527,7 +527,7 @@ body {
 .price__heading {
   font-weight: 700;
   font-size: 2.375rem;
-  line-height: 52px;
+  line-height: 3.25rem;
   color: #03244e;
   position: relative;
   top: 0;
@@ -556,13 +556,13 @@ body {
 .price__label {
   font-weight: 300;
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 1rem;
   color: #03244e;
 }
 .price__label a {
   font-weight: 300;
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 1rem;
   color: #03244e;
   text-decoration: underline;
 }
@@ -599,7 +599,7 @@ body {
 .step__number {
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 27px;
+  line-height: 1.6875rem;
   text-transform: uppercase;
   color: #1872e3;
   margin-top: 10px;
@@ -637,7 +637,7 @@ body {
 .step__description {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #03244e;
   margin-top: 20px;
   width: 75%;
@@ -652,7 +652,7 @@ body {
   position: relative;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 44px;
+  line-height: 2.75rem;
   color: #fbfdff;
   margin-bottom: 60px;
 }
@@ -673,14 +673,14 @@ body {
 .about__heading {
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 27px;
+  line-height: 1.6875rem;
   color: #fbfdff;
   margin-bottom: 10px;
 }
 .about__info {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #fbfdff;
 }
 .about-us .link {
@@ -734,7 +734,7 @@ body {
   margin-top: 40px;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #03244e;
 }
 .belarus {
@@ -769,7 +769,7 @@ body {
   position: relative;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #03244e;
   padding-left: 40px;
 }
@@ -833,7 +833,7 @@ body {
 .contacts__text {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   color: #03244e;
 }
 .footer {
