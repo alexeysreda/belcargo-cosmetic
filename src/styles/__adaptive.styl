@@ -1,0 +1,111 @@
+@media screen and (max-width: 1199.98px) {
+	html, body {
+		font-size: 14px;
+	}
+	.container {
+		max-width: 992px;
+	}
+}
+
+@media screen and (max-width: 991.98px) {
+	.container {
+		max-width: 768px;
+	}
+	.header__content {
+		margin-top: 50px;
+		justify-content: stretch;
+	}
+	.header__h2 {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 767.98px) {
+	.container {
+		//max-width: 576px;
+
+	}
+	.header {
+		background: url('../img/header-bg-tablet.png') no-repeat top -50px center;
+		background-size: cover;
+		height: 900px;
+		padding-left: 30px;
+		padding-right: 30px;
+		//background-position: top 190px right -400px;
+	}
+
+	.header__li_mail {
+		display: none;
+	}
+
+
+
+}
+
+@media screen and (max-width: 575.98px) {
+	html, body {
+		font-size: 12px;
+	}
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.header {
+		height: 1000px;
+		background-position: top 45px center;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 30px;
+		& .container {
+			padding: 0;
+		}
+	}
+
+	.header__li_phone {
+		display: none;
+	}
+
+	.header__h2 {
+		width: 100%;
+	}
+
+	.link {
+		max-width: 100%;
+	}
+
+	.header__menu {
+		padding: 0;
+		align-self: flex-end;
+		& .header__link_wrapper {
+			margin-right: 0;
+		}
+	}
+
+	.mobile {
+		margin: 0;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	.header__ul {
+		height: 70px;
+		width: 100vw;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: fixed;
+		top: 0;
+		background-color: rgba(255, 255, 255, 0.85);
+		z-index: 30;
+	}
+
+	.header__li_logo img {
+		width: 140px;
+	}
+
+
+}

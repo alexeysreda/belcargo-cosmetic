@@ -22,7 +22,7 @@
 
 .modal__heading {
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 33px;
 	text-align: center;
 	color: #03244E;
@@ -50,7 +50,7 @@
 
 .modal__text {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 25px;
 	color: #03244E;
 	position: relative;
@@ -71,3 +71,30 @@
 	}
 }
 
+.mobile {
+	top: 15px;
+	right: 15px;
+	width: 300px;
+	margin-right: 0;
+
+	& ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	& ul li {
+		margin-bottom: 27px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+		color: #03244E;
+
+		&:first-child {
+			margin-bottom: 35px;
+		}
+		& a {
+			text-decoration: none;
+		}
+	}
+}

@@ -19,10 +19,10 @@
 
     <nav class="header__nav container">
         <ul class="header__ul">
-            <li class="header__li">
+            <li class="header__li header__li_logo">
                 <img src="img/icons/belcargo-logo-header.svg" alt="BelCargo">
             </li>
-            <li class="header__li">
+            <li class="header__li header__li_mail">
                 <a href="#" class="header__link header__link_mail">
                     <span class="header__link_wrapper">
                         <img src="img/icons/header-mail.svg" alt="email">
@@ -30,7 +30,7 @@
                     info@belcargo.com
                 </a>
             </li>
-            <li class="header__li">
+            <li class="header__li header__li_phone">
                 <a href="#" class="header__link header__link_phone">
                     <span class="header__link_wrapper">
                         <img src="img/icons/header-phone.svg" alt="phone number">
@@ -40,12 +40,12 @@
             </li>
 
             <li class="header__li">
-                <button class="header__link header__menu">
-                <span class="header__link_wrapper">
+                <button class="header__link header__menu modal-menu__button" data-mfp-src="#modalMenu">
+                    <span class="header__link_wrapper">
 
-                        <img src="img/icons/header-menu.svg" alt="menu">
+                            <img src="img/icons/header-menu.svg" alt="menu">
 
-                </span>
+                    </span>
                 </button>
             </li>
         </ul>
@@ -68,84 +68,97 @@
 
 <main>
 
-    <section class="advantages container">
-        <h2 class="section__heading"><span class="lines"></span>Почему работать с нами<br>так удобно и выгодно?</h2>
+<!--    <section class="advantages container">-->
+<!--        <h2 class="section__heading"><span class="lines"></span>Почему работать с нами<br>так удобно и выгодно?</h2>-->
 
-        <div class="advantages__wrapper">
-            <img class="advantages__image_truck" src="img/advantages-truck.png" alt="фура">
-            <article class="advantages__list">
-                <div class="advantages__list_column">
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-1.svg" alt="коробка">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">Работаем даже<br>
-                                <span class="advantage__text_bold">с небольшими партиями</span>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-2.svg" alt="кошелёк">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">
-                                <span class="advantage__text_bold">Финансовые гарантии</span><br>
-                                и работа без предоплаты
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-3.svg" alt="коробка">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">В зависимости от размера <br>
-                                партии
-                                <span class="advantage__text_bold"> стоимость от 2,8$/кг</span>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="advantages__list_column">
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-4.svg" alt="грузовик">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">Доставка<br>
-                                <span class="advantage__text_bold">от 3 дней из Европы</span>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-5.svg" alt="документ">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">Закрытие<br>
-                                <span class="advantage__text_bold">европейских документов</span>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="advantages__image_wrapper">
-                            <img src="img/icons/advantages-6.svg" alt="дипломат">
-                        </div>
-                        <figcaption>
-                            <h3 class="advantage__text">Стабильная работа<br>
-                                <span class="advantage__text_bold">на протяжении 10 лет</span>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
+<!--        <div class="advantages__wrapper">-->
+<!--            <img class="advantages__image_truck" src="img/advantages-truck.png" alt="фура">-->
+<!--            <article class="advantages__list">-->
+<!--                <div class="advantages__list_column">-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-1.svg" alt="коробка">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">Работаем даже<br>-->
+<!--                                <span class="advantage__text_bold">с небольшими партиями</span>-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-2.svg" alt="кошелёк">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">-->
+<!--                                <span class="advantage__text_bold">Финансовые гарантии</span><br>-->
+<!--                                и работа без предоплаты-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-3.svg" alt="коробка">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">В зависимости от размера <br>-->
+<!--                                партии-->
+<!--                                <span class="advantage__text_bold"> стоимость от 2,8$/кг</span>-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
+<!--                <div class="advantages__list_column">-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-4.svg" alt="грузовик">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">Доставка<br>-->
+<!--                                <span class="advantage__text_bold">от 3 дней из Европы</span>-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-5.svg" alt="документ">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">Закрытие<br>-->
+<!--                                <span class="advantage__text_bold">европейских документов</span>-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                    <figure>-->
+<!--                        <div class="advantages__image_wrapper">-->
+<!--                            <img src="img/icons/advantages-6.svg" alt="дипломат">-->
+<!--                        </div>-->
+<!--                        <figcaption>-->
+<!--                            <h3 class="advantage__text">Стабильная работа<br>-->
+<!--                                <span class="advantage__text_bold">на протяжении 10 лет</span>-->
+<!--                            </h3>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
 
-            </article>
-        </div>
-    </section>
+<!--            </article>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
 
     <section class="modals">
+        <nav class="mobile modal mfp-hide" id="modalMenu">
+            <ul>
+                <li><img src="img/icons/belcargo-logo-header.svg" alt="Белкарго"></li>
+                <li><a href="#">Работа с нами</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Схема работы</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+        </nav>
         <form class="modal modal__calculation mfp-hide" id="modalCalculation" action="send/calculation.php"
               method="post"
               tabindex="-1">
@@ -208,293 +221,293 @@
 
     </section>
 
-    <section class="help">
-        <div class="container">
-            <h2 class="section__heading"><span class="lines"></span>Мы оказываем профессиональную помощь<br>в доставке и
-                растаможке косметических<br>товаров из Европы</h2>
+<!--    <section class="help">-->
+<!--        <div class="container">-->
+<!--            <h2 class="section__heading"><span class="lines"></span>Мы оказываем профессиональную помощь<br>в доставке и-->
+<!--                растаможке косметических<br>товаров из Европы</h2>-->
 
-            <ul class="help__list">
+<!--            <ul class="help__list">-->
 
-                <li class="help__item">
-                    <img src="img/icons/help-icon-1.svg" alt="звезда">
-                    <div class="help__text">
-                        <h4 class="help__heading">Всё берём на себя</h4>
-                        <p class="help__description">Мы самостоятельно ищем разрешительную документацию на ваш товар</p>
-                    </div>
-                </li>
-                <li class="help__item">
-                    <img src="img/icons/help-icon-2.svg" alt="глобус">
-                    <div class="help__text">
-                        <h4 class="help__heading">Нужная география</h4>
-                        <p class="help__description">Нами полностью проработаны основные направления
-                            доставки косметики - Италия, Франция, Германия, Польша</p>
-                    </div>
-                </li>
-                <li class="help__item">
-                    <img src="img/icons/help-icon-3.svg" alt="мишень">
-                    <div class="help__text">
-                        <h4 class="help__heading">Опыт и практика</h4>
-                        <p class="help__description">Работаем с ведущими мировыми производителями косметики
-                            и имеем бесценный опыт работы с брендовыми товарами
-                        </p>
-                    </div>
-                </li>
+<!--                <li class="help__item">-->
+<!--                    <img src="img/icons/help-icon-1.svg" alt="звезда">-->
+<!--                    <div class="help__text">-->
+<!--                        <h4 class="help__heading">Всё берём на себя</h4>-->
+<!--                        <p class="help__description">Мы самостоятельно ищем разрешительную документацию на ваш товар</p>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="help__item">-->
+<!--                    <img src="img/icons/help-icon-2.svg" alt="глобус">-->
+<!--                    <div class="help__text">-->
+<!--                        <h4 class="help__heading">Нужная география</h4>-->
+<!--                        <p class="help__description">Нами полностью проработаны основные направления-->
+<!--                            доставки косметики - Италия, Франция, Германия, Польша</p>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="help__item">-->
+<!--                    <img src="img/icons/help-icon-3.svg" alt="мишень">-->
+<!--                    <div class="help__text">-->
+<!--                        <h4 class="help__heading">Опыт и практика</h4>-->
+<!--                        <p class="help__description">Работаем с ведущими мировыми производителями косметики-->
+<!--                            и имеем бесценный опыт работы с брендовыми товарами-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </li>-->
 
-            </ul>
+<!--            </ul>-->
 
-            <form action="price.php" class="price" method="post">
-                <h3 class="price__heading"><span class="lines"></span>Получите полный<br>прайс-лист за <span
-                        class="price__heading_blue">1 минуту!</span></h3>
-                <input class="price__input" type="text" placeholder="Введите Ваше имя">
-                <input class="price__input" type="email" placeholder="Введите Ваш email">
-                <button type="submit" class="link modal-price__button" data-mfp-src="#modalPrice">Отправить</button>
-                <input type="checkbox" id="priceCheckbox" checked><label for="priceCheckbox" class="price__label">Согласен
-                с <a
-                        href="policy.html">обработкой персональных данных</a></label>
-            </form>
-        </div>
-    </section>
+<!--            <form action="price.php" class="price" method="post">-->
+<!--                <h3 class="price__heading"><span class="lines"></span>Получите полный<br>прайс-лист за <span-->
+<!--                        class="price__heading_blue">1 минуту!</span></h3>-->
+<!--                <input class="price__input" type="text" placeholder="Введите Ваше имя">-->
+<!--                <input class="price__input" type="email" placeholder="Введите Ваш email">-->
+<!--                <button type="submit" class="link modal-price__button" data-mfp-src="#modalPrice">Отправить</button>-->
+<!--                <input type="checkbox" id="priceCheckbox" checked><label for="priceCheckbox" class="price__label">Согласен-->
+<!--                с <a-->
+<!--                        href="policy.html">обработкой персональных данных</a></label>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <section class="steps container">
-        <h2 class="section__heading"><span class="lines"></span>Как мы работаем</h2>
+<!--    <section class="steps container">-->
+<!--        <h2 class="section__heading"><span class="lines"></span>Как мы работаем</h2>-->
 
-        <ul class="steps__list">
-            <li class="step">
-                <img src="img/icons/step-1.svg" alt="документ">
-                <p class="step__number">Шаг 1.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Вы оставляете нам заявку на сайте или по телефону
-                </p>
-            </li>
+<!--        <ul class="steps__list">-->
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-1.svg" alt="документ">-->
+<!--                <p class="step__number">Шаг 1.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Вы оставляете нам заявку на сайте или по телефону-->
+<!--                </p>-->
+<!--            </li>-->
 
-            <li class="step">
-                <img src="img/icons/step-2.svg" alt="согласование">
-                <p class="step__number">Шаг 2.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Согласовываем с Вами условия перевозки, в том числе стоимость
-                    и склад, откуда планируется отправка груза
-                </p>
-            </li>
-            <li class="step">
-                <img src="img/icons/step-3.svg" alt="документ">
-                <p class="step__number">Шаг 3.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Мы готовим все документы для таможенного оформления в Беларуси
-                </p>
-            </li>
-            <li class="step">
-                <img src="img/icons/step-4.svg" alt="документ">
-                <p class="step__number">Шаг 4.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Вы передаете нам контакты Вашего поставщика или привозите товар сами на наш
-                    склад в Милане или Вильнюсе
-                </p>
-            </li>
-            <li class="step">
-                <img src="img/icons/step-5.svg" alt="документ">
-                <p class="step__number">Шаг 5.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Получаете груз в Москве,
-                    или мы осуществляем доставку транспортной компанией
-                </p>
-            </li>
-            <li class="step">
-                <img src="img/icons/step-6.svg" alt="документ">
-                <p class="step__number">Шаг 6.</p>
-                <span class="step__point"></span>
-                <p class="step__description">Получаете комплект закрывающих документов и сверку
-                </p>
-            </li>
-        </ul>
-    </section>
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-2.svg" alt="согласование">-->
+<!--                <p class="step__number">Шаг 2.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Согласовываем с Вами условия перевозки, в том числе стоимость-->
+<!--                    и склад, откуда планируется отправка груза-->
+<!--                </p>-->
+<!--            </li>-->
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-3.svg" alt="документ">-->
+<!--                <p class="step__number">Шаг 3.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Мы готовим все документы для таможенного оформления в Беларуси-->
+<!--                </p>-->
+<!--            </li>-->
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-4.svg" alt="документ">-->
+<!--                <p class="step__number">Шаг 4.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Вы передаете нам контакты Вашего поставщика или привозите товар сами на наш-->
+<!--                    склад в Милане или Вильнюсе-->
+<!--                </p>-->
+<!--            </li>-->
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-5.svg" alt="документ">-->
+<!--                <p class="step__number">Шаг 5.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Получаете груз в Москве,-->
+<!--                    или мы осуществляем доставку транспортной компанией-->
+<!--                </p>-->
+<!--            </li>-->
+<!--            <li class="step">-->
+<!--                <img src="img/icons/step-6.svg" alt="документ">-->
+<!--                <p class="step__number">Шаг 6.</p>-->
+<!--                <span class="step__point"></span>-->
+<!--                <p class="step__description">Получаете комплект закрывающих документов и сверку-->
+<!--                </p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </section>-->
 
-    <section class="about-us">
-        <div class="container">
-            <h2 class="section__heading"><span class="lines"></span>Мы перевозим по 60 тонн товаров<br>
-                каждую неделю на протяжении уже 10 лет!</h2>
+<!--    <section class="about-us">-->
+<!--        <div class="container">-->
+<!--            <h2 class="section__heading"><span class="lines"></span>Мы перевозим по 60 тонн товаров<br>-->
+<!--                каждую неделю на протяжении уже 10 лет!</h2>-->
 
-            <ul class="about__list">
-                <li class="about__item">
-                    <h4 class="about__heading">4 сборные машины</h4>
-                    <p class="about__info">из Европы в неделю. Никаких ожиданий отправки!</p>
-                </li>
-                <li class="about__item">
-                    <h4 class="about__heading">Мы не посредники!</h4>
-                    <p class="about__info">Самостоятельно организуем всю работу со сборными грузами.</p>
-                </li>
-                <li class="about__item">
-                    <h4 class="about__heading">Отличные контракты</h4>
-                    <p class="about__info">с ведущими Европейскими перевозчиками</p>
-                </li>
-            </ul>
+<!--            <ul class="about__list">-->
+<!--                <li class="about__item">-->
+<!--                    <h4 class="about__heading">4 сборные машины</h4>-->
+<!--                    <p class="about__info">из Европы в неделю. Никаких ожиданий отправки!</p>-->
+<!--                </li>-->
+<!--                <li class="about__item">-->
+<!--                    <h4 class="about__heading">Мы не посредники!</h4>-->
+<!--                    <p class="about__info">Самостоятельно организуем всю работу со сборными грузами.</p>-->
+<!--                </li>-->
+<!--                <li class="about__item">-->
+<!--                    <h4 class="about__heading">Отличные контракты</h4>-->
+<!--                    <p class="about__info">с ведущими Европейскими перевозчиками</p>-->
+<!--                </li>-->
+<!--            </ul>-->
 
-            <button class="link modal-order__button" data-mfp-src="#modalOrder">Заказать перевозку</button>
+<!--            <button class="link modal-order__button" data-mfp-src="#modalOrder">Заказать перевозку</button>-->
 
-        </div>
+<!--        </div>-->
 
-    </section>
+<!--    </section>-->
 
-    <section class="numbers container">
-        <h2 class="section__heading"><span class="lines"></span>О нашей компании в цифрах</h2>
+<!--    <section class="numbers container">-->
+<!--        <h2 class="section__heading"><span class="lines"></span>О нашей компании в цифрах</h2>-->
 
-        <section class="numbers__list">
-            <article class="numbers__item">
-                <img src="img/numbers-bg-1.png" alt="фуры">
-                <span class="numbers__number">10</span>
-                <p class="numbers__text">лет успешной работы на рынке транспортных услуг</p>
-            </article>
+<!--        <section class="numbers__list">-->
+<!--            <article class="numbers__item">-->
+<!--                <img src="img/numbers-bg-1.png" alt="фуры">-->
+<!--                <span class="numbers__number">10</span>-->
+<!--                <p class="numbers__text">лет успешной работы на рынке транспортных услуг</p>-->
+<!--            </article>-->
 
-            <article class="numbers__item">
-                <img src="img/numbers-bg-2.png" alt="ноутбук">
-                <span class="numbers__number">30</span>
-                <p class="numbers__text">сотрудников офиса обеспечивают стабильную и качественную работу
-                    в компании</p>
-            </article>
+<!--            <article class="numbers__item">-->
+<!--                <img src="img/numbers-bg-2.png" alt="ноутбук">-->
+<!--                <span class="numbers__number">30</span>-->
+<!--                <p class="numbers__text">сотрудников офиса обеспечивают стабильную и качественную работу-->
+<!--                    в компании</p>-->
+<!--            </article>-->
 
-            <article class="numbers__item">
-                <img src="img/numbers-bg-3.png" alt="фуры">
-                <span class="numbers__number">150</span>
-                <p class="numbers__text">постоянных клиентов, с которыми мы работаем уже более 3х лет!</p>
-            </article>
-        </section>
+<!--            <article class="numbers__item">-->
+<!--                <img src="img/numbers-bg-3.png" alt="фуры">-->
+<!--                <span class="numbers__number">150</span>-->
+<!--                <p class="numbers__text">постоянных клиентов, с которыми мы работаем уже более 3х лет!</p>-->
+<!--            </article>-->
+<!--        </section>-->
 
-    </section>
+<!--    </section>-->
 
-    <section class="belarus container">
+<!--    <section class="belarus container">-->
 
-        <h2 class="section__heading"><span class="lines"></span>У нас прозрачная схема поставок с таможенным оформлением
-            в Беларуси</h2>
+<!--        <h2 class="section__heading"><span class="lines"></span>У нас прозрачная схема поставок с таможенным оформлением-->
+<!--            в Беларуси</h2>-->
 
-        <ul class="belarus__list">
-            <li class="belarus__item">Всё официально</li>
-            <li class="belarus__item">Полный контроль</li>
-        </ul>
+<!--        <ul class="belarus__list">-->
+<!--            <li class="belarus__item">Всё официально</li>-->
+<!--            <li class="belarus__item">Полный контроль</li>-->
+<!--        </ul>-->
 
-    </section>
-    <section class="contacts container">
-        <h2 class="section__heading"><span class="lines"></span>Контакты</h2>
-        <div class="contacts__wrapper">
-            <article class="contacts__column">
-                <a href="#" class="contacts__link">
-                    <div class="contacts__icon">
-                        <img src="img/icons/header-mail.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        info@belcargo.com
-                    </p>
-                </a>
-                <a href="#" class="contacts__link">
-                    <div class="contacts__icon">
-                        <img src="img/icons/header-phone.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        + 7 (495) 642-25-87
-                    </p>
-                </a>
+<!--    </section>-->
+<!--    <section class="contacts container">-->
+<!--        <h2 class="section__heading"><span class="lines"></span>Контакты</h2>-->
+<!--        <div class="contacts__wrapper">-->
+<!--            <article class="contacts__column">-->
+<!--                <a href="#" class="contacts__link">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/header-mail.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        info@belcargo.com-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--                <a href="#" class="contacts__link">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/header-phone.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        + 7 (495) 642-25-87-->
+<!--                    </p>-->
+<!--                </a>-->
 
-                <div class="contacts__link contacts__link_text">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-location.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        г. Москва, ул. Бутлерова, д.17
-                    </p>
-                </div>
+<!--                <div class="contacts__link contacts__link_text">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-location.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        г. Москва, ул. Бутлерова, д.17-->
+<!--                    </p>-->
+<!--                </div>-->
 
-                <a href="#" class="contacts__link">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-whatsapp.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        whatsapp
-                    </p>
-                </a>
+<!--                <a href="#" class="contacts__link">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-whatsapp.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        whatsapp-->
+<!--                    </p>-->
+<!--                </a>-->
 
-                <a href="#" class="contacts__link">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-viber.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        viber
-                    </p>
-                </a>
+<!--                <a href="#" class="contacts__link">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-viber.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        viber-->
+<!--                    </p>-->
+<!--                </a>-->
 
-                <a href="#" class="contacts__link">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-instagram.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        instagram
-                    </p>
-                </a>
+<!--                <a href="#" class="contacts__link">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-instagram.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        instagram-->
+<!--                    </p>-->
+<!--                </a>-->
 
 
-            </article>
+<!--            </article>-->
 
-            <article class="contacts_column">
+<!--            <article class="contacts_column">-->
 
-                <div class="contacts__link contacts__link_text">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-offices.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        Офисы: Минск, Москва
-                    </p>
-                </div>
+<!--                <div class="contacts__link contacts__link_text">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-offices.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        Офисы: Минск, Москва-->
+<!--                    </p>-->
+<!--                </div>-->
 
-                <div class="contacts__link contacts__link_text">
-                    <div class="contacts__icon">
-                        <img src="img/icons/contacts-storages.svg" alt="">
-                    </div>
-                    <p class="contacts__text">
-                        Склады: Милан, Вильнюс, Москва, Минск
-                    </p>
-                </div>
+<!--                <div class="contacts__link contacts__link_text">-->
+<!--                    <div class="contacts__icon">-->
+<!--                        <img src="img/icons/contacts-storages.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <p class="contacts__text">-->
+<!--                        Склады: Милан, Вильнюс, Москва, Минск-->
+<!--                    </p>-->
+<!--                </div>-->
 
-                <img src="img/google-map.png" alt="карта">
+<!--                <img src="img/google-map.png" alt="карта">-->
 
-            </article>
-        </div>
-    </section>
+<!--            </article>-->
+<!--        </div>-->
+<!--    </section>-->
 
 
 </main>
 
-<footer class="footer">
+<!--<footer class="footer">-->
 
-    <div class="container">
-        <img class="footer__logo" src="img/icons/belcargo-logo-header.svg" alt="">
+<!--    <div class="container">-->
+<!--        <img class="footer__logo" src="img/icons/belcargo-logo-header.svg" alt="">-->
 
-        <h3 class="section__heading"><span class="lines"></span>Позвоните нам</h3>
+<!--        <h3 class="section__heading"><span class="lines"></span>Позвоните нам</h3>-->
 
-        <a href="#" class="footer__phone">
-            <div class="footer__icon"><img src="img/icons/header-phone.svg" alt=""></div>
-            <p>+7 (495) 291-00-47</p>
-        </a>
+<!--        <a href="#" class="footer__phone">-->
+<!--            <div class="footer__icon"><img src="img/icons/header-phone.svg" alt=""></div>-->
+<!--            <p>+7 (495) 291-00-47</p>-->
+<!--        </a>-->
 
-        <p class="footer__divider">или</p>
+<!--        <p class="footer__divider">или</p>-->
 
-        <h3 class="section__heading"><span class="lines"></span>Оставьте заявку</h3>
+<!--        <h3 class="section__heading"><span class="lines"></span>Оставьте заявку</h3>-->
 
-        <form action="price.php" class="footer__form" method="post">
-            <div class="footer__form_row">
-                <input class="footer__input" type="text" placeholder="Введите Ваше имя">
-                <input class="footer__input" type="tel" placeholder="Введите Ваш телефон">
-                <button class="link" type="submit">Отправить</button>
-            </div>
-            <div class="footer__checkbox"><input type="checkbox" id="footerCheckbox" checked><label
-                    class="footer__label" for="footerCheckbox">Согласен с <a class="policy__link"
-                                                                             href="policy.html">обработкой персональных
-                данных</a></label></div>
+<!--        <form action="price.php" class="footer__form" method="post">-->
+<!--            <div class="footer__form_row">-->
+<!--                <input class="footer__input" type="text" placeholder="Введите Ваше имя">-->
+<!--                <input class="footer__input" type="tel" placeholder="Введите Ваш телефон">-->
+<!--                <button class="link" type="submit">Отправить</button>-->
+<!--            </div>-->
+<!--            <div class="footer__checkbox"><input type="checkbox" id="footerCheckbox" checked><label-->
+<!--                    class="footer__label" for="footerCheckbox">Согласен с <a class="policy__link"-->
+<!--                                                                             href="policy.html">обработкой персональных-->
+<!--                данных</a></label></div>-->
 
-        </form>
+<!--        </form>-->
 
-        <div class="footer__info">
-            <a href="policy.html" class="footer__policy policy__link">Политика конфиденциальности</a>
-            <p class="footer__copyright">&copy; 2020. BELCARGO</p>
-        </div>
-    </div>
-</footer>
+<!--        <div class="footer__info">-->
+<!--            <a href="policy.html" class="footer__policy policy__link">Политика конфиденциальности</a>-->
+<!--            <p class="footer__copyright">&copy; 2020. BELCARGO</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -519,6 +532,13 @@
         type: 'inline',
         midClick: true,
         closeBtnInside: true
+    });
+
+    $('.modal-menu__button').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        closeBtnInside: true,
+        alignTop: true
     });
 
 </script>

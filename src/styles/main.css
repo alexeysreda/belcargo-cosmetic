@@ -56,7 +56,7 @@
 }
 .modal__heading {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 33px;
   text-align: center;
   color: #03244e;
@@ -81,7 +81,7 @@
 }
 .modal__text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   color: #03244e;
   position: relative;
@@ -99,6 +99,30 @@
 }
 .modal__text_thanks::before {
   top: -2px;
+}
+.mobile {
+  top: 15px;
+  right: 15px;
+  width: 300px;
+  margin-right: 0;
+}
+.mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mobile ul li {
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #03244e;
+}
+.mobile ul li:first-child {
+  margin-bottom: 35px;
+}
+.mobile ul li a {
+  text-decoration: none;
 }
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked),
@@ -237,13 +261,13 @@ body {
   transition: background 0.4s ease;
 }
 .header__link_mail {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #03244e;
   font-weight: 400;
 }
 .header__link_phone {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #03244e;
 }
 .header__link_wrapper {
@@ -277,8 +301,8 @@ body {
 }
 .header__h1 {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 65px;
+  font-size: 3rem;
+  line-height: 4rem;
   margin-bottom: 40px;
   position: relative;
   top: 0;
@@ -287,7 +311,7 @@ body {
 }
 .header__h2 {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 30px;
   margin-bottom: 40px;
 }
@@ -298,7 +322,7 @@ body {
   color: #fbfdff;
   background: linear-gradient(to right, #de1142 0%, #bb0833 100%);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   border: none;
   outline: none;
   width: 360px;
@@ -345,7 +369,7 @@ body {
 }
 .section__heading {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 52px;
   color: #03244e;
   z-index: 2;
@@ -419,7 +443,7 @@ body {
 }
 .advantage__text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   color: #03244e;
   margin-top: 10px;
@@ -434,7 +458,7 @@ body {
 }
 .help .section__heading {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 52px;
   color: #fbfdff;
   position: relative;
@@ -473,13 +497,13 @@ body {
 .help__heading {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   color: #03244e;
 }
 .help__description {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #03244e;
 }
@@ -502,7 +526,7 @@ body {
 }
 .price__heading {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 52px;
   color: #03244e;
   position: relative;
@@ -531,13 +555,13 @@ body {
 }
 .price__label {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   color: #03244e;
 }
 .price__label a {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   color: #03244e;
   text-decoration: underline;
@@ -574,7 +598,7 @@ body {
 }
 .step__number {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   text-transform: uppercase;
   color: #1872e3;
@@ -612,7 +636,7 @@ body {
 }
 .step__description {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #03244e;
   margin-top: 20px;
@@ -627,7 +651,7 @@ body {
 .about-us .section__heading {
   position: relative;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
   color: #fbfdff;
   margin-bottom: 60px;
@@ -648,14 +672,14 @@ body {
 }
 .about__heading {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   color: #fbfdff;
   margin-bottom: 10px;
 }
 .about__info {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #fbfdff;
 }
@@ -697,7 +721,7 @@ body {
 }
 .numbers__number {
   font-weight: 800;
-  font-size: 150px;
+  font-size: 9.375rem;
   line-height: 1;
   color: #1872e3;
   z-index: 1;
@@ -709,7 +733,7 @@ body {
 .numbers__text {
   margin-top: 40px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #03244e;
 }
@@ -744,7 +768,7 @@ body {
 .belarus__item {
   position: relative;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #03244e;
   padding-left: 40px;
@@ -808,7 +832,7 @@ body {
 }
 .contacts__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #03244e;
 }
@@ -829,7 +853,7 @@ body {
   margin-bottom: 20px;
   font-style: italic;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #7c8d9c;
 }
 .footer__phone {
@@ -840,7 +864,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fbfdff;
   text-decoration: none;
   width: 25%;
@@ -886,12 +910,12 @@ body {
 }
 .footer__label {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fbfdff;
 }
 .footer__label a {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fbfdff;
   text-decoration: underline;
 }
@@ -902,15 +926,106 @@ body {
   width: 100%;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #bdbdbd;
 }
 .footer__info a {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #bdbdbd;
 }
 .policy__link:hover,
 .policy__link:focus {
   color: #fff;
+}
+@media screen and (max-width: 1199.98px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .container {
+    max-width: 768px;
+  }
+  .header__content {
+    margin-top: 50px;
+    justify-content: stretch;
+  }
+  .header__h2 {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header {
+    background: url("../img/header-bg-tablet.png") no-repeat top -50px center;
+    background-size: cover;
+    height: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header__li_mail {
+    display: none;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    height: 1000px;
+    background-position: top 45px center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+  .header .container {
+    padding: 0;
+  }
+  .header__li_phone {
+    display: none;
+  }
+  .header__h2 {
+    width: 100%;
+  }
+  .link {
+    max-width: 100%;
+  }
+  .header__menu {
+    padding: 0;
+    align-self: flex-end;
+  }
+  .header__menu .header__link_wrapper {
+    margin-right: 0;
+  }
+  .mobile {
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .header__ul {
+    height: 70px;
+    width: 100vw;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0.85);
+    z-index: 30;
+  }
+  .header__li_logo img {
+    width: 140px;
+  }
 }
