@@ -1,4 +1,4 @@
-.modal__calculation {
+.modal {
 	border: 10px solid transparent;
 	border-image-source: $red-gradient;
 	border-image-slice: 1;
@@ -15,6 +15,9 @@
 	position: relative;
 }
 
+.modal a {
+	color: #03244E;
+}
 
 
 .modal__heading {
@@ -44,3 +47,27 @@
 	width: 100%;
 	margin-bottom: 15px;
 }
+
+.modal__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #03244E;
+	position: relative;
+	padding-left: 45px;
+	margin-bottom: 40px;
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 5px;
+		content: url('../img/icons/modal-check.svg');
+	}
+	&_bold {
+		font-weight: 700;
+	}
+
+	&_thanks::before {
+		top: -2px;
+	}
+}
+

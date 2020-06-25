@@ -146,7 +146,8 @@
     </section>
 
     <section class="modals">
-        <form class="modal modal__calculation" id="modalCalculation" action="send/calculation.php" method="post"
+        <form class="modal modal__calculation mfp-hide" id="modalCalculation" action="send/calculation.php"
+              method="post"
               tabindex="-1">
 
             <h3 class="modal__heading">Рассчитайте точную<br>стоимость доставки груза</h3>
@@ -158,13 +159,53 @@
             <button class="link" type="submit">Отправить</button>
             <div>
                 <input type="checkbox" id="modalCalculationCheckbox" required checked>
-                <label for="modalCalculationCheckbox">Согласен с <a href="policy.html" target="_blank">обработкой персональных
+                <label for="modalCalculationCheckbox">Согласен с <a href="policy.html" target="_blank">обработкой
+                    персональных
                     данных</a></label>
 
                 <!--                    todo у всех ссылок на policy.html добавить target="_blank"-->
             </div>
 
         </form>
+
+        <article class="modal modal__price mfp-hide" id="modalPrice" tabindex="-1">
+            <ul>
+                <li class="modal__text">
+                    Стоимость доставки косметики <span class="modal__text_bold">Вильнюс – Москва</span>
+                    (включены все расходы) – <span class="modal__text_bold">2,8$ за кг.</span>
+                    От нашего склада в Милане или Штутгарте + 1$ за кг.
+                </li>
+                <li class="modal__text">
+                    <span class="modal__text_bold">Скидки для больших партий</span> (от 2000 кг).
+                </li>
+                <li class="modal__text">
+                    Возможен <span class="modal__text_bold">вывоз груза</span> у Вашего поставщика.
+                </li>
+                <li class="modal__text">
+                    Также осуществляем <span class="modal__text_bold">доставку по Москве и отправку в транспортные компании.</span>
+                </li>
+            </ul>
+        </article>
+
+        <form class="modal modal__order mfp-hide" id="modalOrder" action="send/order.php" method="post" tabindex="-1">
+            <h3 class="modal__heading">Напишите свой телефон, и мы подробно расскажем о  наших условиях</h3>
+            <input class="modal__input" type="text" placeholder="Ваше имя" required>
+            <input class="modal__input" type="email" placeholder="Введите Ваш email" required>
+            <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
+            <button class="link" type="submit">Отправить</button>
+            <div>
+                <input type="checkbox" id="modalOrderCheckbox" required checked>
+                <label for="modalOrderCheckbox">Согласен с <a href="policy.html" target="_blank">обработкой
+                    персональных
+                    данных</a></label>
+            </div>
+        </form>
+
+        <article class="modal modal__thanks mfp-hide" id="modalThanks" tabindex="-1">
+            <h3 class="modal__heading">Спасибо!</h3>
+            <p class="modal__text modal__text_thanks">Ваше сообщение отправлено.</p>
+        </article>
+
     </section>
 
     <section class="help">
@@ -206,7 +247,7 @@
                         class="price__heading_blue">1 минуту!</span></h3>
                 <input class="price__input" type="text" placeholder="Введите Ваше имя">
                 <input class="price__input" type="email" placeholder="Введите Ваш email">
-                <button type="submit" class="link">Отправить</button>
+                <button type="submit" class="link modal-price__button" data-mfp-src="#modalPrice">Отправить</button>
                 <input type="checkbox" id="priceCheckbox" checked><label for="priceCheckbox" class="price__label">Согласен
                 с <a
                         href="policy.html">обработкой персональных данных</a></label>
@@ -287,7 +328,7 @@
                 </li>
             </ul>
 
-            <button class="link">Заказать перевозку</button>
+            <button class="link modal-order__button" data-mfp-src="#modalOrder">Заказать перевозку</button>
 
         </div>
 
@@ -463,9 +504,22 @@
     $('.modal-calculation__button').magnificPopup({
         type: 'inline',
         midClick: true,
-        closeBtnInside:true
+        closeBtnInside: true
     });
 
+    $('.modal-price__button').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        closeBtnInside: true
+    });
+
+    //todo вторая модалка (прайс) должна открываться только если заполнены поля выше и стоит галочка
+
+    $('.modal-order__button').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        closeBtnInside: true
+    });
 
 </script>
 </body>
